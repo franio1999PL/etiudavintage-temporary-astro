@@ -1,25 +1,29 @@
 ---
-import MyLink from '../components/MyLink';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title='Vintage Clothing & Wallets | Etiuda Vintage'>
-	<main class='w-full h-screen flex flex-col justify-around p-4'>
-		
-
-		<h1 class='text-4xl text-center'>Welcome to Etiuda Vintage website!</h1>
-
-		<h2 class='text-2xl mt-12 text-center'>Follow us on:</h2>
-
-		<ul class='flex justify-around items-center mt-12'>
-			<MyLink url='https://www.instagram.com/etiudavintage' newTab={true} icon='instagram' />
-			<MyLink url='https://www.etsy.com/pl/shop/EtiudaVintage' newTab={true} icon='etsy' />
+	<main class='w-full min-h-screen'>
+		<div class="w-full flex items-start justify-start">
+			<a class="p-4 m-4 border border-white hover:bg-white/10 hover:opacity-75 mt-4 md:w-fit w-full md:text-left text-center" href="https://www.etsy.com/pl/shop/EtiudaVintage" target="_blank"> 
+				<button class="md:text-4xl text-xl">Buy Our Products on Etsy!</button>
+			</a>
+		</div>
+	
+		<div class="w-full flex justify-center items-center">
+				<img src="bgwithlogo2.png" class="w-full aspect-video max-h-[calc(100vh-180px)] object-cover  mx-auto p-0 lg:px-16 " />
+				<!-- <img class="fixed z-10" src="logo.png" height="100px" width="100px" /> -->
+			
+		</div>
+	
+		<ul class="fixed right-[30px] bottom-[60px] flex flex-col gap-5 justify-center items-end w-full text-xl">
+			<li><a class="border border-white px-4 py-2 bg-white/20 hover:opacity-75" href="https://www.tiktok.com/@etiuda_vintage" target="_blank"><button>Tiktok</button></a></li>
+			<li><a class="border border-white px-4 py-2 bg-white/20 hover:opacity-75" href="https://www.instagram.com/etiudavintage/" target="_blank"><button>Instagram</button></a></li>
+			<li><a class="border border-white px-4 py-2 bg-white/20 hover:opacity-75" href="https://www.facebook.com/profile.php?id=61550216853254" target="_blank"><button>Facebook</button></a></li>
+			<li><a class="border border-white px-4 py-2 bg-white/20 hover:opacity-75" href="https://pl.pinterest.com/ideas/" target="_blank"><button>Pinterest</button></a></li>
 		</ul>
 
-		<section class='flex flex-col justify-center items-center gap-4 mt-48'>
-			<h3 class='text-4xl'>Contact Us</h3>
-			<a class='text-2xl underline uppercase font-serif hover:text-slate-400 transition-all duration-300' href='mailto:contact@etiudavintage.com'>contact@etiudavintage.com</a>
-		</section>
+		<a class="fixed left-5 bottom-5 text-xl" href="mailto:contact@etiudavintage.com">contact@etiudavintage.com</a>
 
 	</main>
 </Layout>
