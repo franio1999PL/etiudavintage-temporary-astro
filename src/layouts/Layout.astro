@@ -23,7 +23,13 @@ const { title } = Astro.props;
 		<meta property="og:description" content="Explore our collection of vintage clothing and wallets. Unique styles from the past brought to the present">
 		<meta property="og:type" content="website">
 		<meta property="og:image" content="https://etiudavintage.com/bgwithlogo.png">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap;">
+
+
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap;"> -->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline';">
+
+
+
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
